@@ -16,6 +16,8 @@ Finally you just need run `generateCall.sh` script under tests folder.
 configs in RTPEngine config file and run the `hepServer.js` under hep folder (just UDP supported!).
 
 ###### sample config
+```
 homer = localhost:65432
 homer-protocol = udp
 homer-id = 2001
+```
