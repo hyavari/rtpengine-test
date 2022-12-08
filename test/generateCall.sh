@@ -7,8 +7,11 @@ filename=recording.wav
 
 CALLER=$(node caller.js ../sdps/caller.json)
 echo "caller: $CALLER"
+CALLERPORT=$(echo $CALLER | awk '{print $NF}')
 
 CALLEE=$(node callee.js ../sdps/callee.json)
 echo "callee: $CALLEE"
+CALLEEPORT=$(echo $CALLEE | awk '{print $NF}')
 
-ffmpeg -re -i ../audio-samples/${filename} -ar 8000 -ac 1 -acodec pcm_mulaw -f rtp "rtp://${serverIp}:${CALLER}?localrtpport=${callerLocalPort}" -ar 8000 -ac 1 -acodec pcm_mulaw -f rtp "rtp://${serverIp}:${CALLEE}?localrtpport=${calleeLocalPort}"
+
+ffmpeg -re -i ../audio-samples/${filename} -ar 8000 -ac 1 -acodec pcm_mulaw -f rtp "rtp://${serverIp}:${CALLERPORT}?localrtpport=${callerLocalPort}" -ar 8000 -ac 1 -acodec pcm_mulaw -f rtp "rtp://${serverIp}:${CALLEEPORT}?localrtpport=${calleeLocalPort}"
