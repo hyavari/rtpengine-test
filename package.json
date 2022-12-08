@@ -1,0 +1,17 @@
+{
+  "name": "rtpe-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "hep-js": "^1.0.20",
+    "rtpengine-client": "^0.3.9",
+    "sdp-transform": "^2.14.1"
+  }
+}

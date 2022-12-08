@@ -1,0 +1,9 @@
+{
+    "ICE":"remove",
+    "call-id":"16d6fd97-d4d9-4efe-973a-4c54ce9dcabd",
+    "command":"answer",
+    "from-tag":"65f531f2-a335-42e4-801c-106b3a9dd22b",
+    "label":"callee",
+    "sdp":"v=0\r\no=- 1607446271 1 IN IP4 127.0.0.1\r\ns=rtpe-test\r\nt=0 0\r\nm=audio 2010 RTP/AVP 0\r\nc=IN IP4 127.0.0.1\r\na=sendrecv\r\na=rtcp:2011",
+    "to-tag":"8cde105d"
+}
