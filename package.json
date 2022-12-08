@@ -1,12 +1,12 @@
 {
-  "name": "rtpe-test",
+  "name": "rtpengine-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "client.js",
+  "description": "RTPEngine test scripts",
+  "main": "commands/ping.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hossein Yavari",
   "license": "ISC",
   "dependencies": {
     "debug": "^4.3.4",
